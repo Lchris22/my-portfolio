@@ -1,0 +1,49 @@
+Lenin Fernandes
+Platform Engineer | Site Reliability Engineer (SRE) Goa, India | 9112770681 | leninfernandes81@gmail.com linkedin.com/in/lenin-fernandes | github.com/Lchris22
+PROFESSIONAL SUMMARY
+Platform Engineer and SRE with over 2.5 years of experience utilizing OpenShift, GitOps (ArgoCD), and Kubernetes to manage enterprise-scale monitoring platforms. Specialized in maintaining observability stacks (Prometheus, Grafana, Loki), automating multi-cloud deployments, and resolving high-severity production incidents. Strong background in software development (Java/Python) combined with a product-focused mindset, evidenced by winning Best GenAI Solution at Semicolons 2025.
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+• Container Orchestration & Cloud: OpenShift, Kubernetes, Docker, AWS, Azure, IBM Cloud.
+• GitOps & IaC: ArgoCD, Helm, Terraform, Jenkins, GitHub Actions.
+• Observability Stack: Prometheus, Grafana, Loki, Thanos, Alertmanager, Turbonomic, Instana, Promtail.
+• Scripting & Backend: Python, Go (Golang), Java (Spring Boot), Shell Scripting.
+• Security & Tools: Azure Key Vault, OAuth/OIDC, Teleport, SonarQube, JFrog Artifactory.
+
+--------------------------------------------------------------------------------
+PROFESSIONAL EXPERIENCE
+Software Engineer (Platform & SRE Team) | Persistent Systems (Client: IBM) September 2023 – Present
+• Observability Stack Ownership: Managed the lifecycle of the monitoring stack (Prometheus, Grafana, Loki, Thanos) on OpenShift clusters. Executed critical version upgrades to resolve vulnerabilities and replaced legacy components (e.g., ubi-oauth-proxy to origin-oauth-proxy) to ensure compliance.
+• GitOps Implementation: Designed and maintained ArgoCD workflows using ApplicationSets for dynamic, scalable deployments across multiple cloud providers (AWS, Azure).
+• Infrastructure Automation: Utilized Go templating in Helm charts to create conditional logic for single-source deployments, ensuring accurate configuration across distinct cloud environments.
+• Incident Response & Debugging: Acted as primary Dev-Support for platform incidents. Resolved high-priority issues such as:
+    ◦ Fixing Teleport database misconfigurations to restore bastion access.
+    ◦ Troubleshooting Grafana OAuth lockouts and "taint" issues causing deployment crashes.
+    ◦ Restoring sequential data gaps in Prometheus and fixing Thanos datasource credential errors.
+• Pipeline Optimization: Replaced legacy shell scripts with modular Python automation in the CI/CD pipeline, improving error handling and significantly reducing debugging time for deployments.
+• Security Engineering: Hardened cluster security by configuring OAuth authentication, managing secrets via Azure Key Vault, and implementing secure private routes for isolated cluster communication.
+Software Engineer Intern | Persistent Systems August 2022 – October 2022
+• Built and tested over 10 open-source packages, contributing fixes to major projects like Docker and Redis.
+• Gained production-level proficiency in Linux VMs, SSH, and Shell scripting while documenting open-source contributions.
+
+--------------------------------------------------------------------------------
+KEY PROJECTS
+AI-Powered Voice Interview Application | Winner - Best GenAI Solution (Semicolons 2025)
+• Award: Won "Best Solution for Category GenAI" at Semicolons 2025 (Persistent Systems).
+• Developed an AI-driven interview platform that utilizes Large Language Models (LLM) to conduct voice-based technical interviews.
+• Engineered a system that captures user voice responses, evaluates content relevance, and provides a comprehensive score for the entire conversation.
+AI-Powered Nutrition Tracker | React Native, Python, Watsonx.ai, Llama Vision
+• Built a cross-platform application using Meta Llama Vision and Watsonx.ai to analyze food images and provide real-time nutritional insights.
+• Integrated Firebase for secure authentication and Nutritionix FoodDB for accurate data tracking.
+High-Frequency Trading Dashboard | Svelte, JavaScript, WebSocket
+• Developed a Progressive Web App (PWA) integrating with a trading broker API via WebSockets for real-time market data and trade execution.
+• Implemented automated risk management features, including one-click stop-loss setups.
+
+--------------------------------------------------------------------------------
+EDUCATION & CERTIFICATIONS
+• Bachelor of Engineering in Computer Science | Goa University (CGPA 8.12) | 2019 – 2023
+• Certifications: Azure Certified Cloud Practitioner, IBM Cybersecurity & AI Ethics, AWS Educate Cloud 101.
+• Honors & Awards:
+    ◦ Winner: Best Solution for Category GenAI - Semicolons 2025.
+    ◦ Finalist: TECHGIG Code Gladiator 2024.
