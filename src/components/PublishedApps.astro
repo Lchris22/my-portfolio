@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import pdfIcon from '../assets/apps/photo_pdf_maker.webp';
 import gigIcon from '../assets/apps/gig_ready.webp';
 import quoteIcon from '../assets/apps/quote_vault.webp';
+import marbleIcon from '../assets/apps/marble_solitaire.webp';
 import { Download } from 'lucide-react';
 
 const apps = [
@@ -24,6 +25,12 @@ const apps = [
     url: 'https://play.google.com/store/apps/details?id=com.lenlabs.quote_vault',
     icon: quoteIcon,
   },
+  {
+    name: 'Marble Solitaire 3D',
+    description: 'Classic single-player board game of strategy. Eliminate marbles until one remains. Features various levels.',
+    url: 'https://play.google.com/store/apps/details?id=com.gmail.leninfernandes51.marblesolitaire3d',
+    icon: marbleIcon,
+  },
 ];
 ---
 
@@ -34,7 +41,7 @@ const apps = [
       <p class="text-xl text-blue-600 dark:text-blue-400 font-medium">Pipelining my ideas to the masses</p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {apps.map((app) => (
         <a 
           href={app.url} 
