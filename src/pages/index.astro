@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
-import Projects from '../components/Projects.astro';
+import Projects from '../components/Projects.tsx';
+import Experience from '../components/Experience.astro';
 import Skills from '../components/Skills.astro';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer.astro';
@@ -14,8 +15,17 @@ import Footer from '../components/Footer.astro';
   <main>
     <Hero />
     <About />
-    <Projects />
+    <Projects client:visible />
+    <Experience />
     <Skills />
+    
+    <!-- Netlify Forms: Hidden Static Form for Detection -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+    
     <ContactForm client:visible />
   </main>
   <Footer />
