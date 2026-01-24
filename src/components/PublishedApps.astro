@@ -1,0 +1,73 @@
+---
+import { Image } from 'astro:assets';
+import pdfIcon from '../assets/apps/photo_pdf_maker.webp';
+import gigIcon from '../assets/apps/gig_ready.webp';
+import quoteIcon from '../assets/apps/quote_vault.webp';
+import { Download } from 'lucide-react';
+
+const apps = [
+  {
+    name: 'Photo PDF Maker',
+    description: 'Combine photos into a polished PDF in seconds. Reduce file size by up to 95% without sacrificing quality.',
+    url: 'https://play.google.com/store/apps/details?id=com.lenlabs.image_packer',
+    icon: pdfIcon,
+  },
+  {
+    name: 'Gig Ready',
+    description: 'The Ultimate Karaoke App! Customize pitch, tempo, and lyrics for unlimited songs. Perfect for performers.',
+    url: 'https://play.google.com/store/apps/details?id=com.lenlabs.gig_ready',
+    icon: gigIcon,
+  },
+  {
+    name: 'Quote Vault',
+    description: 'Personalized sanctuary for meaningful quotes. Save and revisit words of wisdom in a dedicated space.',
+    url: 'https://play.google.com/store/apps/details?id=com.lenlabs.quote_vault',
+    icon: quoteIcon,
+  },
+];
+---
+
+<section id="apps" class="py-24 bg-zinc-50 dark:bg-zinc-900/30">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-zinc-900 dark:text-white font-display mb-4">Published Apps</h2>
+      <p class="text-xl text-blue-600 dark:text-blue-400 font-medium">Pipelining my ideas to the masses</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {apps.map((app) => (
+        <a 
+          href={app.url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="group flex flex-col items-center text-center p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-blue-200 dark:hover:border-blue-800 hover:shadow-xl dark:hover:shadow-blue-900/20 transition-all duration-300 transform hover:-translate-y-1"
+        >
+          <div class="w-24 h-24 mb-6 relative">
+            <Image 
+              src={app.icon} 
+              alt={app.name} 
+              width={96} 
+              height={96} 
+              class="rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow" 
+            />
+            <div class="absolute -bottom-2 -right-2 bg-blue-600 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md">
+              <Download class="w-4 h-4" />
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-bold mb-3 text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            {app.name}
+          </h3>
+          
+          <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+            {app.description}
+          </p>
+          
+          <span class="mt-auto px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-sm font-medium group-hover:bg-blue-100 dark:group-hover:bg-blue-900/40 transition-colors">
+            View on Play Store
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
