@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { Linkedin } from 'lucide-react';
 import profileImage from '../assets/portfolio_photo.png';
 ---
 
@@ -45,6 +46,16 @@ import profileImage from '../assets/portfolio_photo.png';
           class="px-8 py-3 rounded-full border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors w-full md:w-auto"
         >
           Contact Me
+        </a>
+        
+        <a 
+          href="https://www.linkedin.com/in/lenin-fernandes-857470128/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-3 rounded-full border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-zinc-600 dark:text-zinc-400"
+          aria-label="LinkedIn Profile"
+        >
+          <Linkedin className="w-5 h-5" />
         </a>
       </div>
     </div>
